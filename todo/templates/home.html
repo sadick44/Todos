@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    {% include 'navbar.html' %}
+
+<div class="container mt-5">
+    <h3> Let's keep our day organized</h3>
+   <div class="row mt-5">
+       <div class=" col-md card ml-3 my-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Need to create a task ?</h5>
+            <p class="card-text">Having a task created lets keep track of your daily activity</p>
+            <a href="#" class="btn btn-primary">New Task</a>
+          </div>
+        </div>
+
+        <div class="col-md card ml-3" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title"> Do you have an account ?</h5>
+            <p class="card-text">Get an account first in order to create an task</p>
+            <a href="#" class="btn btn-primary">Login</a>
+            <a href="signup" class="btn btn-primary">Sign up</a>
+          </div>
+        </div>
+
+
+   </div>
+
+</div>
+
+{% endblock %}

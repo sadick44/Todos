@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% include 'navbar.html' %}
+    <div class="container mt-5">
+        <div class="col-md-6">
+            <h2 class="my-5">Sign in and get your tasks created</h2>
+            <form method="POST">
+                {% csrf_token %}
+
+                {{ form.as_p }}
+                <input type="submit" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
